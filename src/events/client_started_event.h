@@ -2,6 +2,9 @@
 
 #include "event.h"
 
+/**
+ * Called by the client right after initializing & opening the window
+ */
 event_register(client_started_event) {
-    u64 current_time_ns;
+    float current_time_sec;
 };

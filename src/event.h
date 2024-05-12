@@ -5,7 +5,6 @@
 #include "utils.h"
 
 #define event_register(event_type) \
-    struct event_type ## _struct; \
     typedef struct event_type ## _struct event_type; \
     void common (** event_type ## _register)(event_type *); \
     unsigned int common event_type ## _register_length; \

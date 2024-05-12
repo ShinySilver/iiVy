@@ -2,6 +2,9 @@
 
 #include "event.h"
 
+/**
+ * Called right before closing the window.
+ */
 event_register(client_stopped_event) {
-    u64 current_time_ns;
+    float current_time_sec;
 };

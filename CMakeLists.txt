@@ -19,5 +19,11 @@ add_executable(iiVy ${SRC_FILES})
 target_compile_options(iiVy PRIVATE -fmacro-prefix-map=${CMAKE_CURRENT_SOURCE_DIR}/=)
 target_compile_definitions(iiVy PRIVATE "DEBUG=$<IF:$<CONFIG:Debug>,1,0>")
 
+
+## Raylib
 add_subdirectory(libraries/raylib)
 target_link_libraries(iiVy raylib)
+
+## Physac
+include_directories(libraries/Physac/src)
+set_source_files_properties(/libraries/Physac/physac.h PROPERTIES COMPILE_FLAGS -w)

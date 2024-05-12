@@ -28,14 +28,8 @@ typedef int64_t i64;
  * Misc functions
  */
 
-u64 static time_ns(void) {
-    struct timespec spec;
-    clock_gettime(CLOCK_MONOTONIC, &spec);
-    return spec.tv_sec*(u64)1e9+spec.tv_nsec;
-}
-
-u32 static mod(u32 a, u32 b){
-    u32 r = a % b;
+int static mod(int a, int b){
+    int r = a % b;
     return r < 0 ? r + b : r;
 }
 

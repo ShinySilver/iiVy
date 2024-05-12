@@ -2,6 +2,10 @@
 
 #include "event.h"
 
+/**
+ * Called once per frame, just before the drawing phase.
+ */
 event_register(client_tick_event) {
-    u64 current_time_ns, previous_time_ns;
+    float current_time_sec;
+    float frame_time_sec;
 };

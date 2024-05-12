@@ -1,7 +1,8 @@
 #pragma once
 
 #include "utils.h"
+#include "physac.h"
 
 common struct{
-    double x, y;
+    PhysicsBody body;
 } Player;
